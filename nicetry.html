@@ -10,88 +10,132 @@
 	<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link href="css/styles.css" rel="stylesheet">
-</head>
+	<link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+  <script type="text/javascript" src="js/jquery.cslider.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 
+  <!-- scroll -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    
+      var defaults = {
+          containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+      };
+      
+      
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      
+    });
+  </script>
+  <!-- //scroll -->
+</head>
+	
 
 
 
 <body>
 
-
-      <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Alexa's Site</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="cheatsheet.html">Cheatsheet</a>
-                    </li>
-                    <li>
-                        <a href="feature_demo.html">Features</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Sites
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="views/konefix/kon_index.html" target="_blank">Konefix</a></li>
-                            <li><a href="views/bigpicture/index.html" target="_blank">Big Picture</a></li>
-                            <li><a href="#">(TBD)</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- Top Nav -->
+    <div class="sitenav sitenav-header">
+      <div class="container">
+        <div class="sitenav-header">
+          <button type="button" class="sitenav-toggle" data-toggle="collapse" data-target=".sitenav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <!-- /.container -->
-    </nav>
-    
-
-
-   
-
-
-
-
-    <!-- Header -->
-    <div class="intro-header">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Alexa's Site</h1>
-                        <hr class="intro-divider">                  
-                        <h3>I am just practicing things. Because I need to.</h3>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+        <div class="collapse sitenav-collapse">
+          <ul class="sitenav sitenav-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feature_demo.html">Feature Demo</a></li>
+            <li class="active"><a href="cheatsheet.html">Cheatsheet</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
-    <!-- /.intro-header -->
 
-    <!-- Page Content -->
+
+  <!-- Header image area -->
+  <div class="intro-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>Cheatsheet</h1>
+            <hr class="intro-divider">
+            <h3>Notes and important info to hope me code faster</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- end page top-->
+</div>
+
+<!-- start header -->
+<div class="header">
+  <div class="logo">
+    <a  href="#s7" class="scroll"><img src="images/logo.png"></a>
+  </div>
+    
+  <!-- start top-nav-->
+  <div class="h_right"> 
+  <div class="subMenu" >
+    <div class="wrap">
+      <div class="inner">
+        <a href="#" id="sTop" class="subNavBtn">Home</a> 
+        <a href="#" id="s1" class="subNavBtn">About Me</a>
+        <a href="#" id="s2" class="subNavBtn">Skills</a>
+        <a href="#" id="s3" class="subNavBtn">Resume</a>
+        <a href="#" id="s4" class="subNavBtn">Testimonials</a>
+        <a href="#" id="s5" class="subNavBtn end">Portfolio</a>
+        <a href="#" id="s6" class="subNavBtn end">Contact Me</a>
+      </div><!-- /.navbar-collapse -->
+            <a id="s7" class="right-msg subNavBtn msg-icon"href="#"><span> </span></a>
+            <div class="clearfix"> </div>   
+    </div>  
+    <!-- nav -->
+    <script type="text/javascript"  src="js/jquery.smint.js"></script>
+    <script type="text/javascript">
+    $(document).ready( function() {
+        $('.subMenu').smint({
+          'scrollSpeed' : 1000
+        });
+    });
+    </script>
+    <script>
+    window.addEventListener("load",function() {
+      setTimeout(function(){
+        window.scrollTo(0, 1);
+      }, 0);
+    });</script>
+  </div>
+        <!-- start smart_nav * -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a  href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about" class="scroll">About Me</a></li>
+            <li class="nav-item"><a href="#skills" class="scroll">Skills</a></li>
+            <li class="nav-item"><a href="#resume" class="scroll">Resume</a></li>
+            <li class="nav-item"><a href="#testimonials" class="scroll">Testimonials</a></li>
+            <li class="nav-item"><a href="#portfolio" class="scroll">Portfolio</a></li>                              
+            <li class="nav-item"><a href="#contact"  class="scroll">Contact Me</a></li>
+            <div class="clear"></div>
+          </ul>
+        </nav>
+        <script type="text/javascript" src="js/responsive.menu.js"></script>
+        <!-- end smart_nav * -->
+      </div>
+    <div class="clear"></div>
+  </div>
+<!---//End-header---> 
 
     <div class="content-section-a">
 
@@ -113,6 +157,9 @@
         <!-- /.container -->
 
     </div>
+    <!-- /.intro-header -->
+
+    
     <!-- /.content-section-a -->
 
     <div class="content-section-b">
@@ -185,42 +232,9 @@
         </div>
         <!-- /.container -->
 
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- scripts -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</div><!-- /.container -->
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
-</body>
-
+  </body>
 </html>
