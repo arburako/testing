@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Sidebar Responsive - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #sidebar-wrapper {
+  top: 52px;
+  left: -200px;
+  width: 200px;
+  background-color: #5677fc;
+  color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 50px;
+}
+.sidebar-nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.25);
+  color: white;
+  text-decoration: none;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+#sidebar-wrapper.sidebar-toggle {
+  transition: all 0.3s ease-out;
+  margin-left: -200px;
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper.sidebar-toggle {
+    transition: 0s;
+    left: 200px;
+  }
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a id="menu-toggle" href="#" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			</a>
+  			<a class="navbar-brand" href="home.xhtml">
+  				logo
+  			</a>
+		</div>
+		<div id="sidebar-wrapper" class="sidebar-toggle">
+			<ul class="sidebar-nav">
+		    	<li>
+		      		<a href="#item1">Item 1</a>
+		    	</li>
+		    	<li>
+		      		<a href="#item2">Item 2</a>
+		    	</li>
+		    	<li>
+		      		<a href="#item3">Item 3</a>
+		    	</li>
+		  	</ul>
+		</div>
+  	</div>
+</nav>
+
+<script type="text/javascript">
+$(window).resize(function() {
+	var path = $(this);
+	var contW = path.width();
+	if(contW >= 751){
+		document.getElementsByClassName("sidebar-toggle")[0].style.left="200px";
+	}else{
+		document.getElementsByClassName("sidebar-toggle")[0].style.left="-200px";
+	}
+});
+$(document).ready(function() {
+	$('.dropdown').on('show.bs.dropdown', function(e){
+	    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+	});
+	$('.dropdown').on('hide.bs.dropdown', function(e){
+		$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+	});
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		var elem = document.getElementById("sidebar-wrapper");
+		left = window.getComputedStyle(elem,null).getPropertyValue("left");
+		if(left == "200px"){
+			document.getElementsByClassName("sidebar-toggle")[0].style.left="-200px";
+		}
+		else if(left == "-200px"){
+			document.getElementsByClassName("sidebar-toggle")[0].style.left="200px";
+		}
+	});
+});
+</script>
+</body>
+</html>

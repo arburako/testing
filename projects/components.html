@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Components</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    
+  <!-- bootstrap + core CSS -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css">
+
+
+  <!-- font awesome -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- site specific styles -->
+  <link href="css/alexa.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- start content -->
+
+
+
+<div class="wrapper" id="components">
+    <div class="header-frontend">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="full-slideshow.html">Slideshow</a></li>
+              <li><a href="snippets.html">Sidebar</a></li>
+              <li><a href="screen.html">Screen</a></li>
+              <li><a href="sniplinks.html">Snippets</a></li>
+              <li class="active dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Templates<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="sites.html">Full Sites</a></li>
+                  <li><a href="components.html">Components</a></li>
+                  <li><a href="inspiration.html">Inspiration</a></li>
+                </ul>
+              </li>
+              <li><a href="flipgrid.html">Flipgrid</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cody<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../Cody/3d-items-quick-view/index.html" target="_blank" class="cody"> 3d-items-quick-view </a></li>
+                  <li><a href="../Cody/icons-filling-effect/index.html" target="_blank" class="cody"> icons-filling-effect </a></li>  
+                  <li><a href="../Cody/responsive-tabbed-navigation/index.html" target="_blank" class="cody"> responsive-tabbed-navigation </a></li> 
+                  <li><a href="../Cody/slide-in-panel/index.html" target="_blank" class="cody"> slide-in-panel </a></li>  
+                  <li><a href="../Cody/vertical-fixed-navigation/index.html" target="_blank" class="cody"> vertical-fixed-navigation </a></li> 
+                  <li><a href="../Cody/full-page-intro-and-navigation/index.html" target="_blank" class="cody"> full-page-intro-and-navigation </a></li>
+                  <li><a href="../Cody/3d-items-quick-view/index.html" target="_blank" class="cody"> 3d-items-quick-view </a></li>
+                  <li><a href="../Cody/vertical-timeline/index.html" target="_blank" class="cody"> vertical-timeline </a></li>  
+                  <li><a href="../Cody/alternate-fixed-scroll-background/index.html" target="_blank" class="cody"> alternate-fixed-scroll-background </a></li>
+                  <li><a href="../Cody/back-to-top/index.html" target="_blank" class="cody"> back-to-top </a></li>
+                  <li><a href="../Cody/bouncy-content-filter/index.html" target="_blank" class="cody"> bouncy-content-filter (for cards) </a></li>      
+                  <li><a href="../Cody/client-testimonials-carousel/index.html" target="_blank" class="cody"> client-testimonials-carousel </a></li>
+                  <li><a href="../Cody/faq-template/index.html" target="_blank" class="cody"> faq-template </a></li>  
+                   <li><a href="../Cody/product-quick-view/index.html" target="_blank" class="cody"> product-quick-view </a></li> 
+                   <li><a href="../Cody/points-of-interest/index.html" target="_blank" class="cody"> points-of-interest </a></li> 
+                </ul>
+              </li>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div> <!-- end nav bar -->
+    </div> <!-- end top bar -->
+    
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-8">
+            <h1> Components </h1>
+          </div>
+          <div class="col-lg-8 col-sm-8">
+            <ol class="breadcrumb pull-right">
+              <li><a href="sites.html">Full Sites</a></li>
+              <li class="active"><a href="components.html">Components</a></li>
+              <li><a href="sites.html">Inspiration</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="container" id="portfolio">
+        <div class="categories">
+          <ul>
+            <li class="active"><a href="#" data-filter="*">All</a></li>
+            <li><a href="#" data-filter=".img-feat">Image </a></li>
+            <li><a href="#" data-filter=".c-thumb">Thumb</a></li>
+            <li><a href="#" data-filter=".menu">Menu</a></li>
+            <li><a href="#" data-filter=".scroll-e">Scroll</a></li>
+            <li><a href="#" data-filter=".mont-grid">Grid</a></li>
+            <li><a href="#" data-filter=".anims">Animations</a></li>
+            <li><a href="#" data-filter=".awesome">Awesomest</a></li>
+          </ul>
+        </div>     
+        <div class="projects-container scrollimation in">     
+          <div class="row start-section">            
+            <!-- Grid Gallery -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat c-thumb">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/grid-gallery.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>Grid Gallery</h4>
+                    <p>Image viewer and slider by co-drops</p>
+                    <p><a href="../components/grid-gallery/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- Inner Fade -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item  mont-grid img-feat anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/innerfade.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>Inner Fade</h4>
+                    <p>Possible use for the flippy images</p>
+                    <p><a href="../components/innerfade/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- Automatic Montage -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims img-feat mont-grid">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/auto-montage.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>Automatic Montage</h4>
+                      <p>Codrops plugin that makes a full width or fixed container montage of any group of images</p>
+                      <p><a href="../components/auto-montage/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- Rotating Card -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item c-thumb anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/rotating-card.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>Rotating Card</h4>
+                    <p>GREAT card flip - multiple uses</p>
+                    <p><a href="../components/rotating-card/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>    
+          </div>
+          <div class="row">
+            <!-- Browser Gallery -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/browser-gallery.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>Browser Gallery</h4>
+                      <p>Very awesome effect</p>
+                      <p><a href="../components/browser-gallery/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- animated-svgs -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/animated-svgs.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>animated-svgs</h4>
+                      <p>REALLY awesomet to use for icons. NEED TO USE.</p>
+                      <p><a href="../components/animated-svgs/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- Animated Grid -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item mont-grid anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/animated-grid.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>Animated Grid</h4>
+                      <p>The plugin already installed on the dinamundo page by codrops</p>
+                      <p><a href="../components/animated-grid/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- Bootstrap Moving Box Carousel -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item c-thumb anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/bootstrap-moving-box-carousel.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>Bootstrap Moving Box Carousel</h4>
+                      <p>Seems like a light weight plugin for scrolling through content horizontally, like the owl plugin.</p>
+                      <p><a href="../components/bootstrap-moving-box-carousel/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+          </div>
+          <div class="row">
+            <!-- apple-slider -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/apple-slider.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>apple-slider</h4>
+                      <p><a href="../components/apple-slider/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>  
+            <!-- circular-content-carousel -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item c-thumb scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/circular-content-carousel.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>circular-content-carousel</h4>
+                      <p>Codrops plugin with the animals and expanding cards.</p>
+                      <p><a href="../components/circular-content-carousel/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>   
+            <!-- elastislide -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item c-thumb scroll-e img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/elastislide.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>elastislide</h4>
+                      <p>Codrops plugin that makes multiple versions of a photo strip. Also has one with thumbnails and a big image</p>
+                      <p><a href="../components/elastislide/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- slideme -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e img-feat awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/slideme.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>slideme</h4>
+                      <p>REALLY great full screen slider with vertical and horizontal navigation. </p>
+                      <p><a href="../components/slideme/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+          </div>
+          <div class="row">
+            <!-- bootstrap-fullscreen-slider -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/bootstrap-fullscreen-slider.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>bootstrap-fullscreen-slider</h4>
+                      <p>Simple bootstrap full screen image carousel. Might be a good place to start if I need something like this.</p>
+                      <p><a href="../components/bootstrap-fullscreen-slider/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- fullscreen-animated-slider -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e anims img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fullscreen-animated-slider.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>fullscreen-animated-slider</h4>
+                      <p><a href="../components/fullscreen-animated-slider/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- img-slider-menu -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/img-slider-menu.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>img-slider-menu</h4>
+                      <p><a href="../components/img-slider-menu/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- flex-images -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item mont-grid img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/flex-images.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>flex-images</h4>
+                      <p>Makes grid out any image collage. Seems like the one to go with for this.</p>
+                      <p><a href="../components/flex-images/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+          </div>
+          <div clas="row">
+            <!-- polaroid-gallery -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat mont-grid anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/polaroid-gallery.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>polaroid-gallery</h4>
+                    <p>Interesting plugin, not sure if it needs to be anchored to the bottom of the page. Could be major limitation</p>
+                    <p><a href="../components/polaroid-gallery/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- slippry -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/slippry.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>slippry</h4>
+                      <p>Slider already implemented on test sites</p>
+                      <p><a href="../components/slippry/demo/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- the-big-picture -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/the-big-picture.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>the-big-picture</h4>
+                      <p>Simple BS. I suppose this is anchored to one screen.</p>
+                      <p><a href="../components/the-big-picture/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- bootstrap-magnify -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/bootstrap-magnify.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>bootstrap-magnify</h4>
+                      <p>WOAH! this is the best magnified I have seen. And it's bootstrap!!</p>
+                      <p><a href="../components/bootstrap-magnify/example/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+          </div> 
+          <div class="row">
+            <!-- css-transition-slideshow -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e img-feat anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/css-transition-slideshow.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>css-transition-slideshow</h4>
+                      <p>Already tested this out on Full Slideshow</p>
+                      <p><a href="../components/css-transition-slideshow/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>            
+            <!-- sectionalize -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat anims scroll-e menu">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/sectionalize.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>sectionalize</h4>
+                      <p>Same thing pretty much as the CSS slideshow but menu at the top</p>
+                      <p><a href="../components/sectionalize/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- stick-up -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/stick-up.png" class="img-responsive">
+                    <div class="caption">
+                      <h4>stick-up</h4>
+                      <p>Sticky header, but ugly and already tried and failed with it once</p>
+                      <p><a href="../components/stick-up/stick-up-master/example/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                    </div>
+                </div>
+              </article>
+            <!-- Magic Move -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item mont-grid">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/magic-move.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>Magic Move</h4>
+                    <p>Possible use for the flippy images</p>
+                    <p><a href="../components/magic-move/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>  
+          </div>                   
+          <div class="row">
+            <!-- bootstrap-timeline -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/bootstrap-timeline.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>bootstrap-timeline</h4>
+                    <p>Very simple, only use if having trouble with existing</p>
+                    <p><a href="../components/bootstrap-timeline/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- bootstrap-theme -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/bootstrap-theme.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>bootstrap-theme</h4>
+                    <p>It has ok shadows and boxes but not much else worth the time</p>
+                    <p><a href="../components/bootstrap-theme/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- html-resume -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/html-resume.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>html-resume</h4>
+                    <p>GREAT resume layout, should definitely use. not sure if bootstrap. Also has good simple skills meter</p>
+                    <p><a href="../components/html-resume/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- page-piling -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-eimg-feat anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/page-piling.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>page-piling</h4>
+                    <p>Good transition for vertical page navigations</p>
+                    <p><a href="../components/page-piling/examples/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+          </div>
+          <div class="row">
+            <!-- lonely-worker -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/lonely-worker.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>lonely-worker</h4>
+                    <p><a href="../components/lonely-worker/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- slick-img-slider -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/slick-img-slider.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>slick-img-slider</h4>
+                    <p><a href="../components/slick-img-slider/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- quotes-rotater -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e mont-grid img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/quotes-rotater.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>quotes-rotater</h4>
+                    <p><a href="../components/quotes-rotater/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- interactive-svg -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/interactive-svg.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>interactive-svg</h4>
+                    <p><a href="../components/interactive-svg/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+          </div>
+          <div class="row">
+            <!-- receding-header -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/receding-header.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>receding-header</h4>
+                    <p>Just what i've been looking for. Bootstrap too. Will come in handy if need this.</p>
+                    <p><a href="../components/receding-header/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- rotating-words -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/rotating-words.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>rotating-words</h4>
+                    <p><a href="../components/rotating-words/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- scrolling-iphone -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims awesome img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/scrolling-iphone.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>scrolling-iphone</h4>
+                    <p><a href="../components/scrolling-iphone/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+            <!-- thumb-grid-anim -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item mont-grid anims c-thumb img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/thumb-grid-anim.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>thumb-grid-anim</h4>
+                    <p> Lots of options - many uses </p>
+                    <p><a href="../components/thumb-grid-anim/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>
+          </div>
+          <div class="row">
+            <!-- perspective-navigation -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/perspective-navigation.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>perspective-navigation</h4>
+                    <p><a href="../components/perspective-navigation/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- sidebar-transitions -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/sidebar-transitions.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>sidebar-transitions</h4>
+                    <p><a href="../components/sidebar-transitions/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- animated-border-menus -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/animated-border-menus.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>animated-border-menus</h4>
+                    <p><a href="../components/animated-border-menus/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- fullscreen-layout-with-page-transitions -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fullscreen-layout-with-page-transitions.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fullscreen-layout-with-page-transitions</h4>
+                    <p><a href="../components/fullscreen-layout-with-page-transitions/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+          </div>
+          <div class="row">
+            <!-- fullscreen-page-flip-layout -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fullscreen-page-flip-layout.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fullscreen-page-flip-layout</h4>
+                    <p><a href="../components/fullscreen-page-flip-layout/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- book-preview-fullscreen -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/book-preview-fullscreen.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>book-preview-fullscreen</h4>
+                    <p><a href="../components/book-preview-fullscreen/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- onscroll-header-effects -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/onscroll-header-effects.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>onscroll-header-effects</h4>
+                    <p><a href="../components/onscroll-header-effects/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- horizontal-slideout-menu -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/horizontal-slideout-menu.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>horizontal-slideout-menu</h4>
+                    <p><a href="../components/horizontal-slideout-menu/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+          </div>
+          <div class="row">
+            <!-- vertical-showcase-slider -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/vertical-showcase-slider.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>vertical-showcase-slider</h4>
+                    <p><a href="../components/vertical-showcase-slider/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- book-block -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e c-thumb">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/book-block.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>book-block</h4>
+                    <p><a href="../components/book-block/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>   
+            <!-- fixed-scroll-layout-vertical -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fixed-scroll-layout-vertical.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fixed-scroll-layout-vertical</h4>
+                    <p><a href="../components/fixed-scroll-layout-vertical/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>   
+            <!-- page-intro-effects -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/page-intro-effects.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>page-intro-effects</h4>
+                    <p><a href="../components/page-intro-effects/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>                               
+          </div>  
+
+          <div class="row">
+            <!-- simple-stack-effects -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/simple-stack-effects.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>simple-stack-effects</h4>
+                    <p> Just like the teehand effect with the screens popping out! </p>
+                    <p><a href="../components/simple-stack-effects/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- a-collection-of-separator-styles -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/a-collection-of-separator-styles.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>a-collection-of-separator-styles</h4>
+                    <p><a href="../components/a-collection-of-separator-styles/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>   
+            <!-- sliding-horizontal-layout -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/sliding-horizontal-layout.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>sliding-horizontal-layout</h4>
+                    <p><a href="../components/sliding-horizontal-layout/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>   
+            <!-- 3d-book-showcase -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e c-thumb anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/3d-book-showcase.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>3d-book-showcase</h4>
+                    <p><a href="../components/3d-book-showcase/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>                               
+          </div> 
+
+          <div class="row">
+            <!-- fluid-css3-slideshow-with-parallax-effect -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu anims awesome scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fluid-css3-slideshow-with-parallax-effect.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fluid-css3-slideshow-with-parallax-effect</h4>
+                    <p><a href="../components/fluid-css3-slideshow-with-parallax-effect/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>            
+            <!-- fixed-fade-out-menu -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fixed-fade-out-menu.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fixed-fade-out-menu</h4>
+                    <p><a href="../components/fixed-fade-out-menu/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>   
+            <!-- responsive-full-width-tabs -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/responsive-full-width-tabs.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>responsive-full-width-tabs</h4>
+                    <p><a href="../components/responsive-full-width-tabs/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>   
+            <!-- tab-styles -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu anims awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/tab-styles.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>tab-styles</h4>
+                    <p><a href="../components/tab-styles/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>                               
+          </div> 
+
+          <div class="row">
+            <!-- fullscreen-form-interface -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item scroll-e menu awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fullscreen-form-interface.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fullscreen-form-interface</h4>
+                    <p><a href="../components/fullscreen-form-interface/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- arrow-navigation-styles -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/arrow-navigation-styles.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>arrow-navigation-styles</h4>
+                    <p><a href="../components/arrow-navigation-styles/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- fullscreen-overlay-effects -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item menu scroll-e awesome">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/fullscreen-overlay-effects.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>fullscreen-overlay-effects</h4>
+                    <p><a href="../components/fullscreen-overlay-effects/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- draggable-dual-view-slideshow -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item img-feat menu scroll-e">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/draggable-dual-view-slideshow.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>draggable-dual-view-slideshow</h4>
+                    <p><a href="../components/draggable-dual-view-slideshow/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+          </div>  
+
+          <div class="row">
+            <!-- app-showcase -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item awesome img-feat">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/app-showcase.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>app-showcase</h4>
+                    <p><a href="../components/app-showcase/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- tilted-content-slideshow -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item awesome img-feat anims">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/tilted-content-slideshow.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>tilted-content-slideshow</h4>
+                    <p><a href="../components/tilted-content-slideshow/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- replace -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/replace.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>replace</h4>
+                    <p><a href="../components/replace/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article> 
+            <!-- replace -->
+              <article class="col-xs-18 col-sm-6 col-md-3 portfolio-item">
+                <div class="thumbnail thumbnail-hover portfolio-thumb in">
+                  <img src="img/components/replace.png" class="img-responsive">
+                  <div class="caption">
+                    <h4>replace</h4>
+                    <p><a href="../components/replace/index.html" target="_blank" class="btn btn-primary btn-md btn-embossed" role="button">View</a></p>
+                  </div>
+                </div>
+              </article>      
+        </div> <!-- end projects container -->
+      </div> <!-- end container -->
+    </div> <!-- end main-content -->
+</div> <!-- end wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- end content  -->
+
+  <!-- script references -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+<!-- for the portfolio -->
+<script>
+
+$(function(){
+    $('.categories a').click(function(e){
+      $('.categories ul li').removeClass('active');
+      $(this).parent('li').addClass('active');
+      var itemSelected = $(this).attr('data-filter');
+      $('.portfolio-item').each(function(){
+        if (itemSelected == '*'){
+          $(this).removeClass('filtered').removeClass('selected');
+          return;
+        } else if($(this).is(itemSelected)){
+          $(this).removeClass('filtered').addClass('selected');
+        } else{
+          $(this).removeClass('selected').addClass('filtered');
+        }
+      });
+    });
+});
+</script>
+
+  <!--For the thumbnail hover-->
+<script type="text/javascript">
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
+</script>
+
+
+  
+</body>
+</html>

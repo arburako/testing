@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Sidebar navigation with Scrollspy - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/alexa.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <div class="header-frontend">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="full-slideshow.html">Slideshow</a></li>
+              <li class="active"><a href="snippets.html">Sidebar</a></li>
+              <li><a href="screen.html">Screen</a></li>
+              <li><a href="sniplinks.html">Snippets</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Templates<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="sites.html">Full Sites</a></li>
+                  <li><a href="components.html">Components</a></li>
+                  <li><a href="inspiration.html">Inspiration</a></li>
+                </ul>
+              </li>
+              <li><a href="flipgrid.html">Flipgrid</a></li>
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cody<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../Cody/3d-items-quick-view/index.html" target="_blank" class="cody"> 3d-items-quick-view </a></li>
+                  <li><a href="../Cody/icons-filling-effect/index.html" target="_blank" class="cody"> icons-filling-effect </a></li>  
+                  <li><a href="../Cody/responsive-tabbed-navigation/index.html" target="_blank" class="cody"> responsive-tabbed-navigation </a></li> 
+                  <li><a href="../Cody/slide-in-panel/index.html" target="_blank" class="cody"> slide-in-panel </a></li>  
+                  <li><a href="../Cody/vertical-fixed-navigation/index.html" target="_blank" class="cody"> vertical-fixed-navigation </a></li> 
+                  <li><a href="../Cody/full-page-intro-and-navigation/index.html" target="_blank" class="cody"> full-page-intro-and-navigation </a></li>
+                  <li><a href="../Cody/3d-items-quick-view/index.html" target="_blank" class="cody"> 3d-items-quick-view </a></li>
+                  <li><a href="../Cody/vertical-timeline/index.html" target="_blank" class="cody"> vertical-timeline </a></li>  
+                  <li><a href="../Cody/alternate-fixed-scroll-background/index.html" target="_blank" class="cody"> alternate-fixed-scroll-background </a></li>
+                  <li><a href="../Cody/back-to-top/index.html" target="_blank" class="cody"> back-to-top </a></li>
+                  <li><a href="../Cody/bouncy-content-filter/index.html" target="_blank" class="cody"> bouncy-content-filter (for cards) </a></li>      
+                  <li><a href="../Cody/client-testimonials-carousel/index.html" target="_blank" class="cody"> client-testimonials-carousel </a></li>
+                  <li><a href="../Cody/faq-template/index.html" target="_blank" class="cody"> faq-template </a></li>  
+                   <li><a href="../Cody/product-quick-view/index.html" target="_blank" class="cody"> product-quick-view </a></li> 
+                   <li><a href="../Cody/points-of-interest/index.html" target="_blank" class="cody"> points-of-interest </a></li> 
+                </ul>
+              </li>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div> <!-- end nav bar -->
+    </div> <!-- end top bar -->
+
+    <div class="main-content">
+		<div id="sb-content-wrapper">
+
+			<div id="sidebar-wrapper">
+			    <nav id="spy">
+			        <ul class="sidebar-nav nav">
+			            <li class="sidebar-brand">
+			                <a href="#home"><span class="solo">Home</span></a>
+			            </li>
+			            <li>
+			                <a href="#profile-widget" data-scroll>
+			                    <span class="solo">Profile</span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="#doctors" data-scroll>
+			                    <span class="solo">Doctors</span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="#timeline" data-scroll>
+			                    <span class="solo">Timeline</span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="#snip-port" data-scroll>
+			                    <span class="solo">Portfolio</span>
+			                </a>
+			            </li>
+			        </ul>
+			    </nav>
+			</div>
+
+			<div id="page-content-wrapper">
+			    <div class="content-header container-fluid" id="home">
+			        <h1>
+			            <a id="menu-toggle" href="#home" class="glyphicon glyphicon-align-justify btn-menu toggle">
+			            </a>
+			        </h1>
+			    </div>
+
+			    <div class="page-content inset" data-spy="scroll" data-target="#spy">
+
+					<!-- Profile Widget -->
+					<div class="container-fluid" id="profile-widget">
+						<div class="container">
+							<center>
+								<a class="snippet-link" href="http://www.bootdey.com/snippets/view/Profile-widget-223">
+									<h3> Profile Widget </h3>
+								</a>
+							</center>
+							<div class="row profile-widget">
+								<div class="col-md-2"></div>
+							    <div class="col-md-8">
+							        <div class="panel panel-white profile-widget panel-shadow">
+							            <div class="row">
+							                <div class="col-sm-12">
+							                    <div class="image-container bg2">  
+							                        <img src="http://bootdey.com/img/Content/user_3.jpg" class="avatar" alt="avatar"> 
+							                    </div>
+							                </div>
+							                <div class="col-sm-12">
+							                    <div class="details">
+							                        <h4>Barbao's slim <i class="fa fa-sheild"></i></h4>
+							                        <div>Works at bootdey</div>
+							                        <div>Attended University of colombia</div>
+							                        <div>Lives in medellin, colombia</div>
+							                        <div class="mg-top-10">
+							                            <a href="#" class="btn btn-info">About Barbao's</a>
+							                            <a href="#" class="btn btn-success">Follow</a>
+							                        </div>
+							                    </div>
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+						</div>   
+					</div>                                     
+
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- The Team -->
+					<div class="container-fluid home-doctors clearfix" id="doctors">
+						<a class="snippet-link" href="http://www.bootdey.com/snippets/view/Zoom-Social-228">
+							<h3> Home Doctors </h3>
+						</a>
+					
+						<div class="container">
+							<div class="row">
+							    <div class="col-lg-12 col-md-12 col-sm-12 ">
+							        <div class="slogan-section animated fadeInUp clearfix ae-animation-fadeInUp">
+							            <h2>Meet our <span>Dental Specialists</span></h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>                    
+							        </div>
+							    </div>
+						    </div>
+
+							<div class="row">
+							    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+							        <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
+							            <ul class="list-inline social-lists animate">
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										</ul>
+							            <figure>
+							                    <img width="670" height="500" src="http://somesweetphoto.smugmug.com/photos/i-VHdG3sd/0/O/i-VHdG3sd.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+							            </figure>
+							            <div class="text-content">
+							                <h5>Dr. Jeremy</h5>
+							                <!-- <div class="for-border"></div> -->
+							                <h5><small>Dentist Title</small></h5>
+							            </div>
+							        </div>
+							    </div>
+
+					            <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+					                <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
+					                    <ul class="list-inline social-lists animate">
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										</ul>
+					                    <figure>
+							                    <img width="670" height="500" src="http://somesweetphoto.smugmug.com/photos/i-VHdG3sd/0/O/i-VHdG3sd.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+							            </figure>
+					                    <div class="text-content">
+					                        <h5>Dr. Jeremy</h5>
+					                        <!-- <div class="for-border"></div> -->
+					                        <h5><small>Dentist Title</small></h5>
+					                    </div>
+					                </div>
+					            </div>
+
+					            <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+					                <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
+					                    <ul class="list-inline social-lists animate">
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										</ul>
+					                    <figure>
+							                    <img width="670" height="500" src="http://somesweetphoto.smugmug.com/photos/i-VHdG3sd/0/O/i-VHdG3sd.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+							            </figure>
+					                    <div class="text-content">
+					                        <h5>Dr. Jeremy</h5>
+					                        <!-- <div class="for-border"></div> -->
+					                        <h5><small>Dentist Title</small></h5>
+					                    </div>
+					                </div>
+					            </div>
+
+					            <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+					                <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
+					                    <ul class="list-inline social-lists animate">
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-skype"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										</ul>
+					                    <figure>
+							                    <img width="670" height="500" src="http://somesweetphoto.smugmug.com/photos/i-VHdG3sd/0/O/i-VHdG3sd.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+							            </figure>
+					                    <div class="text-content">
+					                        <h5>Dr. Jeremy</h5>
+					                        <!-- <div class="for-border"></div> -->
+					                        <h5><small>Dentist Title</small></h5>
+					                    </div>
+					                </div>
+					            </div>
+				            </div>
+				            <div class="visible-sm clearfix margin-gap"></div>
+					    </div>
+					</div>
+
+
+
+					<!-- Timeline -->
+					<div class="container-fluid" id="timeline">
+						<div class="container">
+							<center>
+								<a class="snippet-link" href="http://www.bootdey.com/snippets/view/Timeline-with-200">
+									<h3> Timeline </h3>
+								</a>
+							</center>
+						    <section id="news" class="white-bg padding-top-bottom">
+						    	<div class="container">
+									<div class="timeline">
+										<div class="date-title">
+											<span>March 2014</span>
+										</div>
+										<div class="row">
+											<div class="col-sm-6 news-item">
+												<div class="news-content">
+													<div class="date">
+														<p>28</p>
+														<small>Fri</small>
+													</div>
+													<h2 class="news-title">Title 1</h2>
+													<div class="news-media">
+														<a class="colorbox cboxElement" href="#">
+						                                    <img class="img-responsive" src="http://lorempixel.com/400/400/sports/1/" alt="">
+						                                </a>
+													</div>
+													<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure…</p>
+													<a class="read-more" href="#">Read More</a>
+												</div>
+											</div>
+											
+											<div class="col-sm-6 news-item right">
+												<div class="news-content">
+													<div class="date">
+														<p>27</p>
+														<small>Thu</small>
+													</div>
+													<h2 class="news-title">Title 2</h2>
+													<div class="news-media gallery">
+														<a class="colorbox cboxElement" href="#">
+															<img class="img-responsive" src="http://lorempixel.com/400/400/sports/2/" alt="">
+														</a>
+														<a class="colorbox cboxElement" href="#"></a>
+													</div>
+													<p>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure…</p>
+													<a class="read-more" href="#">Read More</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-sm-6 news-item">
+												<div class="news-content">
+													<div class="date">
+														<p>26</p>
+														<small>Wen</small>
+													</div>
+													<h2 class="news-title">Title 3</h2>
+													<div class="news-media video">
+														<a class="colorbox-video cboxElement" href="#">
+															<img class="img-responsive" src="http://lorempixel.com/400/400/sports/3/" alt="">
+														</a>
+													</div>
+													<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized…</p>
+													<a class="read-more" href="#">Read More</a>
+												</div>
+											</div>
+											
+											<div class="col-sm-6 news-item right">
+												<div class="news-content">
+													<div class="date">
+														<p>25</p>
+														<small>Tue</small>
+													</div>
+													<h2 class="news-title">Title 4</h2>
+													<div class="news-media gallery">
+														<a class="colorbox cboxElement" href="#">
+															<img class="img-responsive" src="http://lorempixel.com/400/400/sports/4/" alt="">
+														</a>
+														<a class="colorbox cboxElement" href="#"></a>
+													</div>
+													<p>The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains…</p>
+													<a class="read-more" href="#">Read More</a>
+												</div>
+											</div>
+										</div>
+										
+										<div class="date-title">
+											<span>February 2014</span>
+										</div>
+										<div class="row">	
+											<div class="col-sm-6 news-item">
+												<div class="news-content">
+													<div class="date">
+														<p>27</p>
+														<small>Thu</small>
+													</div>
+													<h2 class="news-title">Title 5</h2>
+													<div class="news-media video">
+														<a class="colorbox-video cboxElement" href="#">
+															<img class="img-responsive" src="http://lorempixel.com/400/400/sports/5/" alt="">
+														</a>
+													</div>
+													<p>But who has any right to find fault with a man who chooses to enjoy a pleasure…</p>
+													<a class="read-more" href="#">Read More</a>
+												</div>
+											</div>
+											
+											<div class="col-sm-6 news-item right">
+												<div class="news-content">
+													<div class="date">
+														<p>24</p>
+														<small>Mon</small>
+													</div>
+													<h2 class="news-title">Title 6</h2>
+													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+													<a class="read-more" href="#">Read More</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+
+					<!-- Portfolio -->
+					<div class="container-fluid clearfix" id="snip-port">
+						<a class="snippet-link" href="http://www.bootdey.com/snippets/view/Portfolio-filter-203">
+							<h3 class="text-center section-title">Portfolio</h3>
+						</a>   
+					    <hr>   
+						<div class="container" id="portfolio" >
+							<!--==== Portfolio Filters ====-->
+							<div class="categories">
+								<ul>
+									<li class="active">
+										<a href="#portfolio" data-filter="*">All Categories</a>
+									</li>
+									<li>
+										<a href="#portfolio" data-filter=".web-design">Web Design</a>
+									</li>
+									<li>
+										<a href="#portfolio" data-filter=".apps">Apps</a>
+									</li>
+									<li>
+										<a href="#portfolio" data-filter=".psd">PSD</a>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- ======= Portfolio items ===-->
+							<div class="projects-container scrollimation in">
+
+								<div class="row">
+
+
+									<article class="col-md-4 col-sm-6 portfolio-item web-design apps psd">
+										<div class="portfolio-thumb in">
+											<a href="#" class="main-link">
+												<img class="img-responsive img-center" src="http://lorempixel.com/400/300/nature/2" alt="">
+												<h2 class="project-title">Billing</h2>
+												<span class="overlay-mask"></span>
+											</a>
+											<a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
+											<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+										</div>
+									</article>
+
+									<article class="col-md-4 col-sm-6 portfolio-item apps">
+										<div class="portfolio-thumb in">
+											<a href="#" class="main-link">
+												<img class="img-responsive img-center" src="http://lorempixel.com/400/300/fashion/4" alt="">
+												<h2 class="project-title">Augmented Tourist</h2>
+												<span class="overlay-mask"></span>
+											</a>
+											<a class="link centered" href=""><i class="fa fa-eye fa-fw"></i></a>
+										</div>
+									</article>
+									
+									<article class="col-md-4 col-sm-6 portfolio-item web-design psd">
+										<div class="portfolio-thumb in">
+											<a href="#" class="main-link">
+												<img class="img-responsive img-center" src="http://lorempixel.com/400/300/city/2" alt="">
+												<h2 class="project-title">Get Colored</h2>
+												<span class="overlay-mask"></span>
+											</a>
+											<a class="enlarge centered cboxElement" href="#" title="Get Colored"><i class="fa fa-expand fa-fw"></i></a>
+										</div>
+									</article>
+									
+									<article class="col-md-4 col-sm-6 portfolio-item apps">
+										<div class="portfolio-thumb in">
+											<a href="#" class="main-link">
+												<img class="img-responsive img-center" src="http://lorempixel.com/400/300/cats/4" alt="">
+												<h2 class="project-title">Holiday Selector</h2>
+												<span class="overlay-mask"></span>
+											</a>
+											<a class="enlarge cboxElement" href="#" title="Holiday Selector"><i class="fa fa-expand fa-fw"></i></a>
+											<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+										</div>
+									</article>
+									
+									<article class="col-md-4 col-sm-6 portfolio-item web-design psd">
+										<div class="portfolio-thumb in">
+											<a href="#" class="main-link">
+												<img class="img-responsive img-center" src="http://lorempixel.com/400/300/technics/3" alt="">
+												<h2 class="project-title">Scavenger Hunt</h2>
+												<span class="overlay-mask"></span>
+											</a>
+											<a class="enlarge cboxElement" href="#" title="Scavenger Hunt"><i class="fa fa-expand fa-fw"></i></a>
+											<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+										</div>
+									</article>
+									
+									<article class="col-md-4 col-sm-6 portfolio-item web-design apps">
+										<div class="portfolio-thumb in">
+											<a href="#" class="main-link">
+												<img class="img-responsive img-center" src="http://lorempixel.com/400/300/nightlife/4" alt="">
+												<h2 class="project-title">Sonor</h2>
+												<span class="overlay-mask"></span>
+											</a>
+											<a class="enlarge cboxElement" href="#" title="Sonor"><i class="fa fa-expand fa-fw"></i></a>
+											<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+										</div>
+									</article>
+
+								</div> <!-- end row -->
+							</div> <!-- end projects-container -->
+						</div> ><!-- end container -->
+					</div> <!-- end snip-port -->
+				</div> <!-- end page content inset -->
+			</div> <!-- end page content wrapper -->
+		</div> <!-- end sb-content-wrapper -->
+	</div>
+</div>
+
+
+<!-- for the portfolio -->
+<script>
+
+$(function(){
+    $('.categories a').click(function(e){
+    	$('.categories ul li').removeClass('yes');
+    	$(this).parent('li').addClass('yes');
+    	var itemSelected = $(this).attr('data-filter');
+    	$('.portfolio-item').each(function(){
+    		if (itemSelected == '*'){
+    			$(this).removeClass('filtered').removeClass('selected');
+    			return;
+    		} else if($(this).is(itemSelected)){
+    			$(this).removeClass('filtered').addClass('selected');
+    		} else{
+    			$(this).removeClass('selected').addClass('filtered');
+    		}
+    	});
+    });
+});
+</script>
+
+
+
+<script type="text/javascript">
+    
+	/*Menu-toggle*/
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sb-content-wrapper").toggleClass("active");
+    });
+
+    /*Scroll Spy*/
+    $('body').scrollspy({ target: '#spy', offset:80});
+
+    /*Smooth link animation*/
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+</script>
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+</body>
+</html>
